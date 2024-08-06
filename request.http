@@ -1,0 +1,20 @@
+### Find all post
+GET localhost:8080/api/posts
+
+###  find post by id
+GET localhost:8080/api/posts/1
+
+### create post
+POST localhost:8080/api/posts
+Content-Type: application/json
+
+{"title":"Usage of rest client", "body": "This is a nice post about restClient", "userId": 1}
+
+### update Post
+PUT localhost:8080/api/posts/1
+Content-Type: application/json
+
+{"id": 1, "userId":3, "title":"Today News", "body": "Today news are quite interesting!!!"}
+
+### delete Post
+DELETE localhost:8080/api/posts/1
